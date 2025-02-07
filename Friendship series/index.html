@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Series</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div id="profileSelection">
+        <h1>Choose Your Profile</h1>
+        <div class="profile-grid">
+            <!-- Profile Cards for 16 people -->
+            <div class="profile-card" onclick="selectProfile('profile1')">
+                <img src="https://via.placeholder.com/200" alt="Profile 1" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 1</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile2')">
+                <img src="https://via.placeholder.com/200" alt="Profile 2" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 2</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile3')">
+                <img src="https://via.placeholder.com/200" alt="Profile 3" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 3</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile4')">
+                <img src="https://via.placeholder.com/200" alt="Profile 4" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 4</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile5')">
+                <img src="https://via.placeholder.com/200" alt="Profile 5" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 5</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile6')">
+                <img src="https://via.placeholder.com/200" alt="Profile 6" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 6</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile7')">
+                <img src="https://via.placeholder.com/200" alt="Profile 7" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 7</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile8')">
+                <img src="https://via.placeholder.com/200" alt="Profile 8" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 8</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile9')">
+                <img src="https://via.placeholder.com/200" alt="Profile 9" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 9</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile10')">
+                <img src="https://via.placeholder.com/200" alt="Profile 10" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 10</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile11')">
+                <img src="https://via.placeholder.com/200" alt="Profile 11" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 11</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile12')">
+                <img src="https://via.placeholder.com/200" alt="Profile 12" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 12</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile13')">
+                <img src="https://via.placeholder.com/200" alt="Profile 13" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 13</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile14')">
+                <img src="https://via.placeholder.com/200" alt="Profile 14" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 14</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile15')">
+                <img src="https://via.placeholder.com/200" alt="Profile 15" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 15</h2>
+            </div>
+            <div class="profile-card" onclick="selectProfile('profile16')">
+                <img src="https://via.placeholder.com/200" alt="Profile 16" loading="lazy" srcset="https://via.placeholder.com/200 200w, https://via.placeholder.com/400 400w" sizes="(max-width: 600px) 200px, 400px">
+                <h2>Friend 16</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectProfile(profile) {
+            // Hide profile selection and show password entry
+            document.getElementById('profileSelection').style.display = 'none';
+            document.getElementById('passwordEntry').style.display = 'block';
+        }
+
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = "123456"; // Sample correct password
+            const errorMessage = document.getElementById('passwordError');
+            
+            if (password === correctPassword) {
+                alert("Password correct! Welcome to " + profile);
+                // Redirect to the next page or display the profile page
+            } else {
+                errorMessage.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 3;
+}
+
+header {
+    background-color: #111;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .tab {
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.navbar .tab.left {
+    font-weight: 600;
+}
+
+.navbar .tab.right {
+    font-size: 1.4em;
+}
+
+#profileSelection {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px; /* ลดระยะห่างจากด้านบน */
+    margin-bottom: 40px;
+}
+
+#profileSelection h1 {
+    margin-bottom: 30px; /* เพิ่มระยะห่างระหว่างคำว่า 'Choose Your Profile' กับโปรไฟล์ */
+    font-size: 2em;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease; /* เพิ่ม transition เพื่อให้การเคลื่อนไหวเนียนขึ้น */
+}
+
+#profileSelection h1.sticky {
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7); /* เพิ่มเงาเมื่อเลือก */
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100%; /* ใช้ให้เต็มพื้นที่ในกริด */
+    aspect-ratio: 1; /* ทำให้เป็นสี่เหลี่ยมจัตุรัส */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0.8;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7);  /* เงาสีแดง */
+}
+
+.profile-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+#passwordEntry {
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+#passwordEntry input {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 2px solid #111;
+    background-color: #222;
+    color: #fff;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.error.hidden {
+    display: none;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile-card {
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+#passwordEntry input {
+    animation: scaleIn 0.5s ease-out forwards;
+}
